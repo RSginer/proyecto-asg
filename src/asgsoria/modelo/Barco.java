@@ -14,6 +14,8 @@ public class Barco {
     private String nombre;
     private int ancho;
     private int largo;
+    private boolean estaMoviendose;
+    private int velocidad;
 
     public Barco(){}
 
@@ -29,6 +31,16 @@ public class Barco {
     public int getId() {
         return id;
     }
+    
+    public void zarparDelPuerto(int velocidad){
+        this.velocidad = velocidad;
+        this.estaMoviendose = true;
+    }
+    
+    public void zarparDelPuerto(){
+        this.velocidad = 10;
+        this.estaMoviendose = true;
+    }
 
     public void setId(int id) {
         this.id = id;
@@ -37,6 +49,8 @@ public class Barco {
     public String getNombre() {
         return nombre;
     }
+    
+    
 
     public void setNombre(String nombre) {
         this.nombre = nombre;

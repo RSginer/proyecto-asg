@@ -18,7 +18,8 @@ public class Main {
      */
     public static void main(String[] args) {
         Barco barco = new Barco(1,"barco de alvaro",3,2);
-        barco.setAncho(10);
+        barco.zarparDelPuerto();
+        barco.zarparDelPuerto(20);
         Jugador alvaro = new Jugador(1, "Alvaro");
         System.out.println(alvaro.getNombre());
     }
