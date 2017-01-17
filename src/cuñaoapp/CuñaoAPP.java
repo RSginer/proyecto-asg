@@ -15,7 +15,7 @@ public class CuñaoAPP {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Hola cuñao");
+        System.out.println("Hola cuñao desde mi PC");
     }
     
 }
