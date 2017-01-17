@@ -3,19 +3,24 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cuñaoapp;
+package asgsoria;
 
+import asgsoria.modelo.Barco;
+import asgsoria.modelo.Jugador;
 /**
  *
  * @author Rubén
  */
-public class CuñaoAPP {
+public class Main {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Hola cuñao desde mi PC");
+        Barco barco = new Barco(1,"barco de alvaro",3,2);
+        barco.setAncho(10);
+        Jugador alvaro = new Jugador(1, "Alvaro");
+        System.out.println(alvaro.getNombre());
     }
     
 }
