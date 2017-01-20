@@ -45,6 +45,8 @@ public class Main {
     private static void jugar(Jugador jugadorRojo, Jugador jugadorAzul) {
         Barco mapaJugadorRojo[] = {null, null, null, null, null};
         Barco mapaJugadorAzul[] = {null, null, null, null, null};
+        boolean haGanado = false;
+        String disparo = null;
         Scanner scanner = new Scanner(System.in);
         System.out.println("HOLA JUGADOR ROJO");
         System.out.println("Introduce la posicion donde quieres poner tu barco: ");
@@ -54,6 +56,26 @@ public class Main {
         System.out.println("Introduce la posicion donde quieres poner tu barco: ");
         respuestaUsuario = scanner.nextLine();
         mapaJugadorAzul[Integer.parseInt(respuestaUsuario)] = new Barco();
+        do {
+            System.out.println("DISPARO JUGADOR ROJO");
+            System.out.println("Introduce la posicion donde quires disparar: ");
+            disparo = scanner.nextLine();
+            if (mapaJugadorAzul[Integer.parseInt(disparo)] instanceof Barco) {
+                haGanado = true;
+                  System.out.println("HA GANADO EL JUGADOR ROJO !");
+            } else {
+                System.out.println("AGUA !");
+                System.out.println("DISPARO JUGADOR AZUL");
+                System.out.println("Introduce la posicion donde quires disparar: ");
+                disparo = scanner.nextLine();
+                if (mapaJugadorRojo[Integer.parseInt(disparo)] instanceof Barco) {
+                    haGanado = true;
+                    System.out.println("HA GANADO EL JUGADOR AZUL !");
+                } else {
+                    System.out.println("AGUA ! ");
+                }
+            }
+        } while (!haGanado);
     }
 
 }
