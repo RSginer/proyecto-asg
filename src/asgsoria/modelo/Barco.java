@@ -1,13 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package asgsoria.modelo;
 
 /**
  *
- * @author Rubén
+ * @author alvaro
  */
 public class Barco {
     private int id;
@@ -74,7 +70,6 @@ public class Barco {
         this.largo = largo;
     }
     
-   @Override
-    public String toString(){
-    return "ID: " + this.id + "\n NOMBRE: " + this.nombre + "\n ANCHO:" + this.ancho + "\n LARGO: " + this.largo;}
+   
+  
 }
