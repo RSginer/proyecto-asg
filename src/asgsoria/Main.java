@@ -8,11 +8,11 @@ package asgsoria;
 import asgsoria.modelo.Barco;
 import asgsoria.modelo.Jugador;
 import java.util.Scanner;
-import java.util.Vector;
+
 
 /**
  *
- * @author Rubén
+ * @author alvaro
  */
 public class Main {
 
@@ -41,7 +41,7 @@ public class Main {
         } while (!respuestaUsuario.equals("2"));
 
     }
-
+//Vector lista de objetos barco =null
     private static void jugar(Jugador jugadorRojo, Jugador jugadorAzul) {
         Barco mapaJugadorRojo[] = {null, null, null, null, null};
         Barco mapaJugadorAzul[] = {null, null, null, null, null};
