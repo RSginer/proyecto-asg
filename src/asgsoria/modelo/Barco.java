@@ -49,9 +49,7 @@ public class Barco {
     public String getNombre() {
         return nombre;
     }
-    
-    
-
+   
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -75,7 +73,8 @@ public class Barco {
     public void setLargo(int largo) {
         this.largo = largo;
     }
+    
    @Override
     public String toString(){
-    return "Soy un dios !! ID: " + this.id + "\n NOMBRE: " + this.nombre + "\n ANCHO:" + this.ancho + "\n LARGO: " + this.largo;}
+    return "ID: " + this.id + "\n NOMBRE: " + this.nombre + "\n ANCHO:" + this.ancho + "\n LARGO: " + this.largo;}
 }
